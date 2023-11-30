@@ -6,7 +6,7 @@ var port = 4000;
 var server = http.createServer(function (request, response) {
   // Extract the URL path from the request
   var path = request.url;
-  var query = url.parse(req.url,true).query;
+  var query = url.parse(path,true).query;
 
   console.log("query", query);
 
